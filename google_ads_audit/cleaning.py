@@ -3,6 +3,7 @@ from __future__ import annotations
 import logging
 import re
 from pathlib import Path
+from typing import Any
 
 import numpy as np
 import pandas as pd
@@ -47,10 +48,14 @@ PERCENT_COLUMNS = {
 DATE_COLUMNS = {"date", "change_date"}
 
 
-def read_google_ads_csv(path_or_buffer: str | Path | object, source_name: str | None = None) -> ImportedReport:
+def read_google_ads_csv(path_or_buffer: Any, source_name: str | None = None) -> ImportedReport:
+    if hasattr(path_or_buffer, "seek"):
+        path_or_buffer.seek(0)
     try:
         dataframe = pd.read_csv(path_or_buffer, encoding="utf-8-sig", skip_blank_lines=True)
     except UnicodeDecodeError:
+        if hasattr(path_or_buffer, "seek"):
+            path_or_buffer.seek(0)
         dataframe = pd.read_csv(path_or_buffer, encoding="cp932", skip_blank_lines=True)
     original_columns = list(dataframe.columns)
     dataframe = clean_dataframe(dataframe)
@@ -68,14 +73,17 @@ def read_google_ads_csv(path_or_buffer: str | Path | object, source_name: str | 
 def clean_dataframe(dataframe: pd.DataFrame) -> pd.DataFrame:
     df = dataframe.copy()
     df = df.dropna(how="all")
-    df.columns = [str(column).strip().replace("\ufeff", "") for column in df.columns]
+    df.columns = [column.strip().replace("\ufeff", "") for column in df.columns]
     df = df.rename(columns=canonicalize_columns(df.columns))
     df = _remove_summary_rows(df)
     for column in df.columns:
         if column in NUMERIC_COLUMNS:
             df[column] = df[column].map(_parse_number)
         elif column in DATE_COLUMNS:
-            df[column] = pd.to_datetime(df[column], errors="coerce")
+            parsed = pd.to_datetime(df[column], errors="coerce")
+            if hasattr(parsed, "dt") and parsed.dt.tz is not None:
+                parsed = parsed.dt.tz_convert(None)
+            df[column] = parsed
         elif df[column].dtype == object:
             df[column] = df[column].astype(str).str.strip().replace({"nan": np.nan, "--": np.nan})
     df = df.drop_duplicates()
@@ -93,7 +101,7 @@ def _remove_summary_rows(df: pd.DataFrame) -> pd.DataFrame:
     return df.loc[mask].copy()
 
 
-def _parse_number(value: object) -> float:
+def _parse_number(value: Any) -> float:
     if pd.isna(value):
         return 0.0
     text = str(value).strip()

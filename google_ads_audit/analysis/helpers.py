@@ -41,6 +41,9 @@ def aggregate_performance(df: pd.DataFrame, dimensions: list[str]) -> pd.DataFra
     if not available_dimensions or not metrics:
         return pd.DataFrame()
     grouped = df.groupby(available_dimensions, dropna=False)[metrics].sum().reset_index()
+    for col in ["cost", "clicks", "impressions", "conversions"]:
+        if col not in grouped.columns:
+            grouped[col] = 0.0
     grouped = add_rate_metrics(grouped)
     return grouped.sort_values("cost", ascending=False) if "cost" in grouped.columns else grouped
 

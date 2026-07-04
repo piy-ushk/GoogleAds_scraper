@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import logging
+from typing import Any
 
 import pandas as pd
 
@@ -11,6 +12,7 @@ from google_ads_audit.analysis.conversion_audit import audit_conversions
 from google_ads_audit.analysis.keyword_audit import audit_keywords
 from google_ads_audit.analysis.landing_page_audit import audit_landing_pages
 from google_ads_audit.analysis.search_term_audit import audit_search_terms
+from google_ads_audit.analysis.helpers import add_rate_metrics
 from google_ads_audit.analysis.segment_audits import audit_segment
 from google_ads_audit.cleaning import merge_reports
 from google_ads_audit.config import AuditConfig
@@ -24,7 +26,7 @@ logger = logging.getLogger(__name__)
 def run_audit(imported_reports: list[ImportedReport], config: AuditConfig) -> AuditResult:
     reports = merge_reports(imported_reports)
     findings = []
-    metrics = {"reports_loaded": {key.value: len(value) for key, value in reports.items()}}
+    metrics: dict[str, Any] = {"reports_loaded": {key.value: len(value) for key, value in reports.items()}}
 
     campaign_df = _report_or_performance(reports, ReportType.CAMPAIGNS)
     keyword_df = _report_or_performance(reports, ReportType.KEYWORDS)
@@ -70,6 +72,11 @@ def _report_or_performance(
 ) -> pd.DataFrame:
     report = reports.get(report_type)
     if report is not None and not report.empty:
+        report = report.copy()
+        for col in ["cost", "clicks", "impressions", "conversions"]:
+            if col not in report.columns:
+                report[col] = 0.0
+        report = add_rate_metrics(report)
         return report
     return _best_performance(reports, required_dimension=required_dimension)
 
@@ -88,4 +95,9 @@ def _best_performance(
             candidates.append(frame)
     if not candidates:
         return pd.DataFrame()
-    return max(candidates, key=lambda frame: len(frame.columns))
+    best = max(candidates, key=lambda frame: len(frame.columns)).copy()
+    for col in ["cost", "clicks", "impressions", "conversions"]:
+        if col not in best.columns:
+            best[col] = 0.0
+    best = add_rate_metrics(best)
+    return best
