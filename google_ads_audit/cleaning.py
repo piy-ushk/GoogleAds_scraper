@@ -111,7 +111,7 @@ def _parse_number(value: Any) -> float:
     if text.endswith("%"):
         multiplier = 1.0
     text = text.replace("%", "")
-    text = re.sub(r"[¥$,€£,\s]", "", text)
+    text = re.sub(r"[¥￥$,，€£\s]", "", text)
     text = text.replace("−", "-")
     if text.startswith("(") and text.endswith(")"):
         text = f"-{text[1:-1]}"

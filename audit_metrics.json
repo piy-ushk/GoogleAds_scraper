@@ -1,0 +1,435 @@
+{
+  "scores": {
+    "Campaign Structure": 64.0,
+    "Keyword Quality": 100.0,
+    "Budget Efficiency": 78.4,
+    "Conversion Tracking": 100.0,
+    "CTR": 70,
+    "CPA": 85.6,
+    "Search Terms": 100.0,
+    "Landing Pages": 100.0,
+    "Competition": 100.0,
+    "Overall": 88.7
+  },
+  "findings": [
+    {
+      "title": "Low CTR in campaign '【富山県】比較検討'",
+      "priority": "Medium",
+      "category": "Campaign Audit",
+      "reason": "Low CTR suggests weak ad relevance, broad targeting, or poor auction positioning.",
+      "evidence": "CTR is 0.0%.",
+      "impact": "Low CTR can reduce Quality Score and increase CPC.",
+      "recommendation": "Tighten query intent, split ad groups by theme, and rewrite ads around emergency locksmith intent.",
+      "metrics": {
+        "campaign": "【富山県】比較検討",
+        "cost": 0.0,
+        "clicks": 0.0,
+        "impressions": 0.0,
+        "conversions": 7.0,
+        "ctr": 0.0,
+        "conversion_rate": 0.0,
+        "cost_per_conversion": 0.0,
+        "avg_cpc": 0.0
+      }
+    },
+    {
+      "title": "Low CTR in campaign '【富山県】比較検討（車）'",
+      "priority": "Medium",
+      "category": "Campaign Audit",
+      "reason": "Low CTR suggests weak ad relevance, broad targeting, or poor auction positioning.",
+      "evidence": "CTR is 0.0%.",
+      "impact": "Low CTR can reduce Quality Score and increase CPC.",
+      "recommendation": "Tighten query intent, split ad groups by theme, and rewrite ads around emergency locksmith intent.",
+      "metrics": {
+        "campaign": "【富山県】比較検討（車）",
+        "cost": 0.0,
+        "clicks": 0.0,
+        "impressions": 0.0,
+        "conversions": 4.0,
+        "ctr": 0.0,
+        "conversion_rate": 0.0,
+        "cost_per_conversion": 0.0,
+        "avg_cpc": 0.0
+      }
+    },
+    {
+      "title": "Low CTR in campaign '【石川県】比較検討'",
+      "priority": "Medium",
+      "category": "Campaign Audit",
+      "reason": "Low CTR suggests weak ad relevance, broad targeting, or poor auction positioning.",
+      "evidence": "CTR is 0.0%.",
+      "impact": "Low CTR can reduce Quality Score and increase CPC.",
+      "recommendation": "Tighten query intent, split ad groups by theme, and rewrite ads around emergency locksmith intent.",
+      "metrics": {
+        "campaign": "【石川県】比較検討",
+        "cost": 0.0,
+        "clicks": 0.0,
+        "impressions": 0.0,
+        "conversions": 14.0,
+        "ctr": 0.0,
+        "conversion_rate": 0.0,
+        "cost_per_conversion": 0.0,
+        "avg_cpc": 0.0
+      }
+    }
+  ],
+  "metrics": {
+    "reports_loaded": {
+      "unknown": 432,
+      "ad_groups": 6,
+      "campaigns": 8,
+      "devices": 4
+    },
+    "campaign_audit": {
+      "campaign_count": 4,
+      "total_cost": 0.0,
+      "total_conversions": 26.0,
+      "account_cpa": 0.0,
+      "top_campaigns": [
+        {
+          "campaign": "【富山県】比較検討",
+          "cost": 0.0,
+          "clicks": 0.0,
+          "impressions": 0.0,
+          "conversions": 7.0,
+          "ctr": 0.0,
+          "conversion_rate": 0.0,
+          "cost_per_conversion": 0.0,
+          "avg_cpc": 0.0
+        },
+        {
+          "campaign": "【富山県】比較検討（車）",
+          "cost": 0.0,
+          "clicks": 0.0,
+          "impressions": 0.0,
+          "conversions": 4.0,
+          "ctr": 0.0,
+          "conversion_rate": 0.0,
+          "cost_per_conversion": 0.0,
+          "avg_cpc": 0.0
+        },
+        {
+          "campaign": "【石川県】比較検討",
+          "cost": 0.0,
+          "clicks": 0.0,
+          "impressions": 0.0,
+          "conversions": 14.0,
+          "ctr": 0.0,
+          "conversion_rate": 0.0,
+          "cost_per_conversion": 0.0,
+          "avg_cpc": 0.0
+        },
+        {
+          "campaign": "【石川県】比較検討（車）",
+          "cost": 0.0,
+          "clicks": 0.0,
+          "impressions": 0.0,
+          "conversions": 1.0,
+          "ctr": 0.0,
+          "conversion_rate": 0.0,
+          "cost_per_conversion": 0.0,
+          "avg_cpc": 0.0
+        }
+      ]
+    },
+    "keyword_audit": {},
+    "search_term_audit": {},
+    "conversion_audit": {
+      "cost": 0.0,
+      "clicks": 1033.0,
+      "impressions": 24597.0,
+      "conversions": 26.0,
+      "ctr": 4.199699150302882,
+      "conversion_rate": 2.516940948693127,
+      "cpa": 0.0,
+      "avg_cpc": 0.0,
+      "trend": [
+        {
+          "date": "2026-06-27 00:00:00",
+          "cost": 0.0,
+          "clicks": 64.0,
+          "impressions": 0.0,
+          "conversions": 2.0,
+          "ctr": 0.0,
+          "conversion_rate": 3.125,
+          "cost_per_conversion": 0.0,
+          "avg_cpc": 0.0
+        },
+        {
+          "date": "2026-06-28 00:00:00",
+          "cost": 0.0,
+          "clicks": 58.0,
+          "impressions": 0.0,
+          "conversions": 5.0,
+          "ctr": 0.0,
+          "conversion_rate": 8.620689655172415,
+          "cost_per_conversion": 0.0,
+          "avg_cpc": 0.0
+        },
+        {
+          "date": "2026-06-29 00:00:00",
+          "cost": 0.0,
+          "clicks": 39.0,
+          "impressions": 0.0,
+          "conversions": 4.0,
+          "ctr": 0.0,
+          "conversion_rate": 10.256410256410255,
+          "cost_per_conversion": 0.0,
+          "avg_cpc": 0.0
+        },
+        {
+          "date": "2026-06-30 00:00:00",
+          "cost": 0.0,
+          "clicks": 35.0,
+          "impressions": 0.0,
+          "conversions": 2.0,
+          "ctr": 0.0,
+          "conversion_rate": 5.714285714285714,
+          "cost_per_conversion": 0.0,
+          "avg_cpc": 0.0
+        },
+        {
+          "date": "2026-07-01 00:00:00",
+          "cost": 0.0,
+          "clicks": 30.0,
+          "impressions": 0.0,
+          "conversions": 6.0,
+          "ctr": 0.0,
+          "conversion_rate": 20.0,
+          "cost_per_conversion": 0.0,
+          "avg_cpc": 0.0
+        },
+        {
+          "date": "2026-07-02 00:00:00",
+          "cost": 0.0,
+          "clicks": 50.0,
+          "impressions": 0.0,
+          "conversions": 2.0,
+          "ctr": 0.0,
+          "conversion_rate": 4.0,
+          "cost_per_conversion": 0.0,
+          "avg_cpc": 0.0
+        },
+        {
+          "date": "2026-07-03 00:00:00",
+          "cost": 0.0,
+          "clicks": 47.0,
+          "impressions": 0.0,
+          "conversions": 5.0,
+          "ctr": 0.0,
+          "conversion_rate": 10.638297872340425,
+          "cost_per_conversion": 0.0,
+          "avg_cpc": 0.0
+        },
+        {
+          "date": "NaT",
+          "cost": 0.0,
+          "clicks": 710.0,
+          "impressions": 24597.0,
+          "conversions": 0.0,
+          "ctr": 2.886530877749319,
+          "conversion_rate": 0.0,
+          "cost_per_conversion": 0.0,
+          "avg_cpc": 0.0
+        }
+      ]
+    },
+    "device_audit": {
+      "device_comparison": [
+        {
+          "device": "Computers",
+          "cost": 0.0,
+          "clicks": 0.0,
+          "impressions": 0.0,
+          "conversions": 0.0,
+          "ctr": 0.0,
+          "conversion_rate": 0.0,
+          "cost_per_conversion": 0.0,
+          "avg_cpc": 0.0
+        },
+        {
+          "device": "Mobile Phones",
+          "cost": 0.0,
+          "clicks": 323.0,
+          "impressions": 0.0,
+          "conversions": 26.0,
+          "ctr": 0.0,
+          "conversion_rate": 8.04953560371517,
+          "cost_per_conversion": 0.0,
+          "avg_cpc": 0.0
+        },
+        {
+          "device": "TV screens",
+          "cost": 0.0,
+          "clicks": 0.0,
+          "impressions": 0.0,
+          "conversions": 0.0,
+          "ctr": 0.0,
+          "conversion_rate": 0.0,
+          "cost_per_conversion": 0.0,
+          "avg_cpc": 0.0
+        },
+        {
+          "device": "Tablets",
+          "cost": 0.0,
+          "clicks": 0.0,
+          "impressions": 0.0,
+          "conversions": 0.0,
+          "ctr": 0.0,
+          "conversion_rate": 0.0,
+          "cost_per_conversion": 0.0,
+          "avg_cpc": 0.0
+        }
+      ],
+      "best": [
+        {
+          "device": "Mobile Phones",
+          "cost": 0.0,
+          "clicks": 323.0,
+          "impressions": 0.0,
+          "conversions": 26.0,
+          "ctr": 0.0,
+          "conversion_rate": 8.04953560371517,
+          "cost_per_conversion": 0.0,
+          "avg_cpc": 0.0
+        },
+        {
+          "device": "Computers",
+          "cost": 0.0,
+          "clicks": 0.0,
+          "impressions": 0.0,
+          "conversions": 0.0,
+          "ctr": 0.0,
+          "conversion_rate": 0.0,
+          "cost_per_conversion": 0.0,
+          "avg_cpc": 0.0
+        },
+        {
+          "device": "TV screens",
+          "cost": 0.0,
+          "clicks": 0.0,
+          "impressions": 0.0,
+          "conversions": 0.0,
+          "ctr": 0.0,
+          "conversion_rate": 0.0,
+          "cost_per_conversion": 0.0,
+          "avg_cpc": 0.0
+        },
+        {
+          "device": "Tablets",
+          "cost": 0.0,
+          "clicks": 0.0,
+          "impressions": 0.0,
+          "conversions": 0.0,
+          "ctr": 0.0,
+          "conversion_rate": 0.0,
+          "cost_per_conversion": 0.0,
+          "avg_cpc": 0.0
+        }
+      ],
+      "worst": [
+        {
+          "device": "Computers",
+          "cost": 0.0,
+          "clicks": 0.0,
+          "impressions": 0.0,
+          "conversions": 0.0,
+          "ctr": 0.0,
+          "conversion_rate": 0.0,
+          "cost_per_conversion": 0.0,
+          "avg_cpc": 0.0
+        },
+        {
+          "device": "Mobile Phones",
+          "cost": 0.0,
+          "clicks": 323.0,
+          "impressions": 0.0,
+          "conversions": 26.0,
+          "ctr": 0.0,
+          "conversion_rate": 8.04953560371517,
+          "cost_per_conversion": 0.0,
+          "avg_cpc": 0.0
+        },
+        {
+          "device": "TV screens",
+          "cost": 0.0,
+          "clicks": 0.0,
+          "impressions": 0.0,
+          "conversions": 0.0,
+          "ctr": 0.0,
+          "conversion_rate": 0.0,
+          "cost_per_conversion": 0.0,
+          "avg_cpc": 0.0
+        },
+        {
+          "device": "Tablets",
+          "cost": 0.0,
+          "clicks": 0.0,
+          "impressions": 0.0,
+          "conversions": 0.0,
+          "ctr": 0.0,
+          "conversion_rate": 0.0,
+          "cost_per_conversion": 0.0,
+          "avg_cpc": 0.0
+        }
+      ]
+    },
+    "location_audit": {},
+    "time_day_audit": {},
+    "time_hour_audit": {},
+    "auction_audit": {},
+    "change_history_audit": {},
+    "landing_page_audit": {},
+    "score_breakdown": {
+      "Campaign Structure": 64.0,
+      "Keyword Quality": 100.0,
+      "Budget Efficiency": 78.4,
+      "Conversion Tracking": 100.0,
+      "CTR": 70,
+      "CPA": 85.6,
+      "Search Terms": 100.0,
+      "Landing Pages": 100.0,
+      "Competition": 100.0,
+      "Overall": 88.7
+    },
+    "top_findings": [
+      {
+        "campaign": "【富山県】比較検討",
+        "cost": 0.0,
+        "clicks": 0.0,
+        "impressions": 0.0,
+        "conversions": 7.0,
+        "ctr": 0.0,
+        "conversion_rate": 0.0,
+        "cost_per_conversion": 0.0,
+        "avg_cpc": 0.0,
+        "title": "Low CTR in campaign '【富山県】比較検討'"
+      },
+      {
+        "campaign": "【富山県】比較検討（車）",
+        "cost": 0.0,
+        "clicks": 0.0,
+        "impressions": 0.0,
+        "conversions": 4.0,
+        "ctr": 0.0,
+        "conversion_rate": 0.0,
+        "cost_per_conversion": 0.0,
+        "avg_cpc": 0.0,
+        "title": "Low CTR in campaign '【富山県】比較検討（車）'"
+      },
+      {
+        "campaign": "【石川県】比較検討",
+        "cost": 0.0,
+        "clicks": 0.0,
+        "impressions": 0.0,
+        "conversions": 14.0,
+        "ctr": 0.0,
+        "conversion_rate": 0.0,
+        "cost_per_conversion": 0.0,
+        "avg_cpc": 0.0,
+        "title": "Low CTR in campaign '【石川県】比較検討'"
+      }
+    ]
+  },
+  "ai_summary": null
+}

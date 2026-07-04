@@ -9,6 +9,8 @@ from google_ads_audit.models import AuditFinding, Priority
 
 def audit_keywords(df: pd.DataFrame, config: AuditConfig) -> tuple[list[AuditFinding], dict]:
     findings: list[AuditFinding] = []
+    if "keyword" not in df.columns:
+        return findings, {}
     keyword_df = aggregate_performance(df, ["keyword", "match_type"])
     if keyword_df.empty:
         return findings, {}
