@@ -1,0 +1,29 @@
+# Thresholds are intentionally editable. Tune these per market/client after a few audits.
+currency: JPY
+high_spend_min: 50000
+zero_conversion_spend_min: 30000
+poor_ctr_threshold: 2.0
+poor_cvr_threshold: 2.0
+high_cpa_multiplier: 1.5
+low_quality_score_threshold: 5
+broad_match_share_warning: 0.5
+top_n_rows: 15
+before_period_label: "Before decline"
+after_period_label: "After decline"
+irrelevant_search_terms:
+  - free
+  - cheap
+  - diy
+  - job
+  - jobs
+  - hiring
+  - salary
+  - template
+  - meaning
+  - how to
+  - 自分で
+  - 無料
+  - 求人
+  - 採用
+  - 給料
+  - やり方
