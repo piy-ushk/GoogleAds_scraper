@@ -1,0 +1,32 @@
+=== OSAKA ACCOUNT DEEP DIVE ===
+
+[1] Total Wasted Spend (0 Conversions): ¥2,101,054
+Top 10 Wasted Search Terms:
+Search term    Cost
+   カギ の 救急車 19042.0
+  鍵 の 110 番 15912.0
+         鍵屋 14442.0
+     車 インキー  8540.0
+    鍵 無く した  8188.0
+車 の 鍵 無く した  8076.0
+車 の 鍵 無く した  7820.0
+カギ の 救急車 料金  7546.0
+   カギ の 救急車  7446.0
+         鍵屋  7356.0
+
+[2] Ad Churn: Detected ~13 changes to responsive search ads in the history.
+[2b] Bid Strategy Churn: Detected ~0 changes to bid strategies.
+
+[4] Weekly CPA Trend:
+ Week     Cost  Conversions          CPA
+   18  83448.0          3.0 27816.000000
+   19 464096.0         42.0 11049.904762
+   20 491223.0         50.0  9824.460000
+   21 507977.0         49.0 10366.877551
+   22 439642.0         42.0 10467.666667
+   23 473176.0         43.0 11004.093023
+   24 401952.0         48.0  8374.000000
+   25 555595.0         53.0 10482.924528
+   26 446909.0         33.0 13542.696970
+   27 602401.0         51.0 11811.784314
+   28  89601.0          3.0 29867.000000

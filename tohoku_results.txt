@@ -1,0 +1,43 @@
+=== TOHOKU ACCOUNT DEEP DIVE ===
+
+[1] Total Wasted Spend (0 Conversions): ¥1,368,743
+Top 10 Wasted Search Terms:
+ Search term    Cost
+   鍵 の 110 番 14067.0
+ 鍵 商 イシカワ 仙台 11938.0
+ カギ の 救急車 仙台 11846.0
+     福島 市 鍵屋 11416.0
+   鍵 無く した 時 10305.0
+南 相馬 市 鍵屋 さん  9392.0
+ 古川 ロック センター  7860.0
+    カギハシ 多賀城  7426.0
+ 家 の 鍵 無く した  7411.0
+  近く の 鍵屋 さん  7241.0
+
+[2] Ad Churn: Detected ~0 changes to responsive search ads in the history.
+[2b] Bid Strategy Churn: Detected ~0 changes to bid strategies.
+[2c] Budget Churn: Detected ~3 changes to budgets.
+
+[3] Top Competitors (Auction Insights):
+Display URL domain Impression share
+        カギの110番.jp           19.46%
+    kagino-110.com           21.68%
+   kagi110qq.co.jp           17.35%
+               You           36.81%
+        街の鍵屋さん.com           13.44%
+
+[4] Weekly Trend (Spend, Conversions, Impressions, CPA):
+ Week     Cost  Conversions          CPA
+   16  46302.0          2.0 23151.000000
+   17 184462.0         22.0  8384.636364
+   18 221296.0         21.0 10537.904762
+   19 308442.0         32.0  9638.812500
+   20 402280.0         32.0 12571.250000
+   21 360702.0         26.0 13873.153846
+   22 417763.0         23.0 18163.608696
+   23 222529.0         29.0  7673.413793
+   24 230445.0         25.0  9217.800000
+   25 207915.0         25.0  8316.600000
+   26 231416.0         21.0 11019.809524
+   27 245842.0         23.0 10688.782609
+   28  45145.0          5.0  9029.000000
